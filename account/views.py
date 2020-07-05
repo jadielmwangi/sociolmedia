@@ -3,6 +3,8 @@ from django.http import HttpResponse
 from django.contrib.auth import authenticate, login
 from .forms import LoginForm
 from django.contrib.auth.decorators import login_required
+
+from django.core.mail import send_mail
 # Create your views here.
 
 def user_login(request):
